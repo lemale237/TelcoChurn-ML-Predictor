@@ -27,17 +27,17 @@ option = st.radio("Choisissez une option :", ('Prédiction pour un seul client',
 if option == 'Prédiction pour un seul client':
     st.subheader("Entrez les données du client :")
     
-    LOG_DATA = st.number_input('LOG_DATA')
-    LOG_TIME_CLIENT = st.number_input('LOG_TIME_CLIENT')
-    INCOME = st.number_input('INCOME')
-    OVERCHARGE = st.number_input('OVERCHARGE')
-    OVERCHARGE_RATIO = st.number_input('OVERCHARGE_RATIO')
-    LEFTOVER = st.number_input('LEFTOVER')
-    HOUSE = st.number_input('HOUSE')
-    HANDSET_PRICE = st.number_input('HANDSET_PRICE')
-    OVER_15MINS_CALLS_PER_MONTH = st.number_input('OVER_15MINS_CALLS_PER_MONTH')
-    HOUSE_INCOME_RATIO = st.number_input('HOUSE_INCOME_RATIO')
-    DATA_TIME_RATIO = st.number_input('DATA_TIME_RATIO')
+    LOG_DATA = st.number_input('Données Logarithmiques')
+    LOG_TIME_CLIENT = st.number_input('Temps Client Logarithmique')
+    INCOME = st.number_input('Revenu')
+    OVERCHARGE = st.number_input('Surcharge')
+    OVERCHARGE_RATIO = st.number_input('Ratio de Surcharge')
+    LEFTOVER = st.number_input('Restant')
+    HOUSE = st.number_input('Maison')
+    HANDSET_PRICE = st.number_input('Prix du Téléphone')
+    OVER_15MINS_CALLS_PER_MONTH = st.number_input('Appels de plus de 15 minutes par mois')
+    HOUSE_INCOME_RATIO = st.number_input('Ratio Revenu/Maison')
+    DATA_TIME_RATIO = st.number_input('Ratio Données/Temps')
     
     # Bouton pour lancer la prédiction
     if st.button('Prédire'):
