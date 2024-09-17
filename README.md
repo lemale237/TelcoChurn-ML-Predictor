@@ -1,2 +1,37 @@
-# TelcoChurn-ML-Predictor
- TelcoChurn-ML-Predictor : Solution avancée de prédiction du churn client pour l'industrie des télécommunications  Ce projet propose une solution complète et innovante pour prédire et gérer le churn (attrition) des clients dans le secteur des télécommunications. En combinant des techniques avancées de machine learning avec une analyse approfondie des données client, nous offrons un outil puissant pour anticiper les départs de clients et optimiser les stratégies de rétention.  Caractéristiques principales : - Analyse exploratoire des données (EDA) approfondie pour identifier les facteurs clés du churn - Prétraitement des données et ingénierie des caractéristiques pour maximiser la performance des modèles - Modélisation avancée utilisant XGBoost avec optimisation des hyperparamètres - Évaluation rigoureuse du modèle via validation croisée et analyse ROC - Interface utilisateur interactive développée avec Streamlit pour des prédictions en temps réel - Système de recommandation de remises personnalisées pour une rétention client optimisée  Ce projet démontre l'application pratique de la data science et du machine learning pour résoudre un défi business critique. Il offre non seulement des prédictions précises, mais aussi des insights actionnables pour améliorer la fidélisation client.  Que vous soyez un data scientist, un professionnel des télécoms ou simplement curieux d'explorer l'application du ML dans un contexte business réel, ce projet vous fournira des exemples concrets et des outils pratiques pour comprendre et prédire le comportement client.  Explorez, contribuez et découvrez comment la data science peut transformer la gestion de la relation client dans l'ère numérique !
+# Prédiction de Churn Client avec Machine Learning
+
+## Description
+Ce projet vise à prédire le churn (attrition) des clients d'une entreprise de télécommunications en utilisant des techniques avancées de machine learning. Il comprend une analyse exploratoire des données, le développement d'un modèle prédictif, et une interface utilisateur interactive pour les prédictions en temps réel.
+
+## Fonctionnalités
+- Analyse exploratoire des données (EDA) approfondie
+- Prétraitement des données et ingénierie des caractéristiques
+- Modélisation avec XGBoost et optimisation des hyperparamètres
+- Évaluation du modèle avec validation croisée et analyse ROC
+- Interface utilisateur Streamlit pour des prédictions interactives
+- Calcul de recommandations de remises personnalisées
+
+## Technologies Utilisées
+- Python
+- Pandas, NumPy pour la manipulation des données
+- Scikit-learn, XGBoost pour le machine learning
+- Matplotlib, Seaborn pour la visualisation
+- Streamlit pour l'interface utilisateur
+
+## Installation et Utilisation
+1. Clonez le dépôt
+2. Installez les dépendances : `pip install -r requirements.txt`
+3. Exécutez le notebook Jupyter pour l'analyse et la modélisation
+4. Lancez l'application Streamlit : `streamlit run app.py`
+
+## Structure du Projet
+- `notebook.ipynb`: Notebook Jupyter pour l'analyse et la modélisation
+- `app.py`: Application Streamlit pour l'interface utilisateur
+- `data/`: Dossier contenant les données (non inclus dans le dépôt)
+- `models/`: Modèles entraînés sauvegardés
+
+## Contribution
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
+
+## Licence
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
