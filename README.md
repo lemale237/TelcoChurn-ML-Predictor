@@ -6,10 +6,10 @@ Ce projet vise à prédire le churn (attrition) des clients d'une entreprise de 
 ## Aperçu de l'Interface Utilisateur
 
 ### Prédiction pour un seul client
-![Interface utilisateur pour un seul client](images/1.png)
+![Interface utilisateur pour un seul client](images/2.png)
 
 ### Prédictions en masse (import CSV)
-![Interface utilisateur pour prédictions en masse](images/2.png)
+![Interface utilisateur pour prédictions en masse](images/1.png)
 
 ## Fonctionnalités
 - Analyse exploratoire des données (EDA) approfondie
