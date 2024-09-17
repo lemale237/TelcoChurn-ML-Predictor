@@ -1,7 +1,15 @@
-# Prédiction de Churn Client avec Machine Learning
+# TelcoChurn-ML-Predictor
 
 ## Description
 Ce projet vise à prédire le churn (attrition) des clients d'une entreprise de télécommunications en utilisant des techniques avancées de machine learning. Il comprend une analyse exploratoire des données, le développement d'un modèle prédictif, et une interface utilisateur interactive pour les prédictions en temps réel.
+
+## Aperçu de l'Interface Utilisateur
+
+### Prédiction pour un seul client
+![Interface utilisateur pour un seul client](images/1.png)
+
+### Prédictions en masse (import CSV)
+![Interface utilisateur pour prédictions en masse](images/2.png)
 
 ## Fonctionnalités
 - Analyse exploratoire des données (EDA) approfondie
@@ -29,6 +37,7 @@ Ce projet vise à prédire le churn (attrition) des clients d'une entreprise de 
 - `app.py`: Application Streamlit pour l'interface utilisateur
 - `data/`: Dossier contenant les données (non inclus dans le dépôt)
 - `models/`: Modèles entraînés sauvegardés
+- `images/`: Captures d'écran de l'interface utilisateur
 
 ## Contribution
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.

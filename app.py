@@ -14,7 +14,7 @@ scaler = joblib.load('./models/scaler.joblib')
 average_profit = 235.72740171938904
 
 # Titre et description
-st.title("Prédiction du Churn Client")
+st.title("⭐Prédiction du Churn Client⭐")
 st.write("""
 Cette application permet de prédire la probabilité qu'un client quitte l'entreprise (churn) en se basant sur diverses caractéristiques.
 Vous pouvez soit entrer les données d'un seul client, soit importer un fichier CSV pour obtenir des prédictions en masse.
@@ -27,15 +27,15 @@ option = st.radio("Choisissez une option :", ('Prédiction pour un seul client',
 if option == 'Prédiction pour un seul client':
     st.subheader("Entrez les données du client :")
     
-    LOG_DATA = st.number_input('Données Logarithmiques')
-    LOG_TIME_CLIENT = st.number_input('Temps Client Logarithmique')
-    INCOME = st.number_input('Revenu')
-    OVERCHARGE = st.number_input('Surcharge')
-    OVERCHARGE_RATIO = st.number_input('Ratio de Surcharge')
-    LEFTOVER = st.number_input('Restant')
-    HOUSE = st.number_input('Maison')
-    HANDSET_PRICE = st.number_input('Prix du Téléphone')
-    OVER_15MINS_CALLS_PER_MONTH = st.number_input('Appels de plus de 15 minutes par mois')
+    LOG_DATA = st.number_input('Consommation mensuelle de données (en Mo)')
+    LOG_TIME_CLIENT = st.number_input('Ancienneté du client (en années)')
+    INCOME = st.number_input('Revenu annuel (salaire) du client')
+    OVERCHARGE = st.number_input('Surcharge moyenne par an')
+    OVERCHARGE_RATIO = st.number_input('Ratio de surcharge')
+    LEFTOVER = st.number_input('Minutes restantes moyennes par mois')
+    HOUSE = st.number_input('Valeur estimée du logement')
+    HANDSET_PRICE = st.number_input('Coût du téléphone')
+    OVER_15MINS_CALLS_PER_MONTH = st.number_input('Nombre moyen d\'appels longs (>15 mins) par mois')
     HOUSE_INCOME_RATIO = st.number_input('Ratio Revenu/Maison')
     DATA_TIME_RATIO = st.number_input('Ratio Données/Temps')
     
@@ -111,7 +111,8 @@ elif option == 'Prédictions en masse (import CSV)':
         data['CHURN_LABEL'] = data['CHURN_PROBABILITY'].apply(lambda x: 'LEAVE' if x >= seuil_optimal else 'STAY')
         
         max_discount = average_profit - 10
-        data['DISCOUNT'] = data['CHURN_PROBABILITY'].apply(lambda x: min(round(10 * x, 2), max_discount))
+        data['DISCOUNT'] = data['CHURN_PROBABILITY'].apply(lambda x: min(round(10 * x, 2), max_discount)).astype(str) + ' €'
+
         
         # Affichage des résultats en ordre décroissant
         st.subheader("Résultats des prédictions :")
