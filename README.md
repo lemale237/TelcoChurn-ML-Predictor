@@ -35,7 +35,7 @@ Ce projet vise à prédire le churn (attrition) des clients d'une entreprise de 
 ## Structure du Projet
 - `notebook.ipynb`: Notebook Jupyter pour l'analyse et la modélisation
 - `app.py`: Application Streamlit pour l'interface utilisateur
-- `data/`: Dossier contenant les données (non inclus dans le dépôt)
+- `data/`: Dossier contenant les données 
 - `models/`: Modèles entraînés sauvegardés
 - `images/`: Captures d'écran de l'interface utilisateur
 
